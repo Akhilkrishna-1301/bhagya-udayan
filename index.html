@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffe4ed">
+    <meta name="description" content="A birthday surprise made with love.">
+
+    <title>Happy Birthday, My Love ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated background -->
+    <div class="stars" id="stars" aria-hidden="true"></div>
+
+    <main class="container">
+
+        <p class="eyebrow">A LITTLE SOMETHING MADE JUST FOR YOU</p>
+
+        <h1>
+            Happy Birthday,<br>
+            <span>My Love</span> ✨
+        </h1>
+
+        <p class="subtitle">
+            Today the world celebrates you.
+            I just feel lucky that I get to love you. ❤️
+        </p>
+
+        <div class="main-heart" aria-hidden="true">💗</div>
+
+        <!-- Personal Photo Gallery -->
+        <section class="gallery-section">
+
+            <p class="gallery-label">OUR LITTLE WORLD</p>
+
+            <h2>Beautiful Memories ❤️</h2>
+
+            <p class="gallery-description">
+                Every picture tells a story.
+                Every memory with you is special to me.
+            </p>
+
+            <div class="photo-gallery">
+
+                <figure class="photo-card">
+                    <img src="images/photo1.jpg"
+                         alt="Our favorite moments"
+                         loading="lazy">
+                    <figcaption>💕 Our favorite moments</figcaption>
+                </figure>
+
+                <figure class="photo-card">
+                    <img src="images/photo2.jpg"
+                         alt="Your beautiful smile"
+                         loading="lazy">
+                    <figcaption>🌸 Your beautiful smile</figcaption>
+                </figure>
+
+                <figure class="photo-card">
+                    <img src="images/photo3.jpg"
+                         alt="Moments I treasure"
+                         loading="lazy">
+                    <figcaption>✨ Moments I treasure</figcaption>
+                </figure>
+
+                <figure class="photo-card">
+                    <img src="images/photo4.jpg"
+                         alt="Just you and me"
+                         loading="lazy">
+                    <figcaption>💗 Just you and me</figcaption>
+                </figure>
+
+                <figure class="photo-card">
+                    <img src="images/photo5.jpg"
+                         alt="A day to remember"
+                         loading="lazy">
+                    <figcaption>🥰 A day to remember</figcaption>
+                </figure>
+
+                <figure class="photo-card">
+                    <img src="images/photo6.jpg"
+                         alt="More memories to come"
+                         loading="lazy">
+                    <figcaption>♾️ More memories to come</figcaption>
+                </figure>
+
+            </div>
+
+            <p class="gallery-ending">
+                If I could relive any moment,
+                I'd choose more moments with you. ❤️
+            </p>
+
+        </section>
+
+        <!-- ============================= -->
+<!-- INTERACTIVE BIRTHDAY CAKE -->
+<!-- ============================= -->
+
+<section class="card cake-section">
+
+    <p class="eyebrow">A WISH JUST FOR YOU</p>
+
+    <h2>Your Birthday Cake 🎂</h2>
+
+    <p>
+        Close your eyes, make a wish, and blow out your candles!
+    </p>
+
+    <div class="birthday-cake" id="birthdayCake">
+
+        <div class="cake-candles" id="cakeCandles">
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+
+        </div>
+
+        <div class="cake-top"></div>
+        <div class="cake-middle"></div>
+        <div class="cake-bottom"></div>
+
+    </div>
+
+    <button id="blowCandlesBtn" type="button">
+        🎂 Blow Out the Candles
+    </button>
+
+    <p id="cakeMessage" class="feature-message" aria-live="polite"></p>
+
+</section>
+
+
+<!-- ============================= -->
+<!-- MUSIC PLAYER -->
+<!-- ============================= -->
+
+<section class="card music-section">
+
+    <h2>A Little Music for You 🎵</h2>
+
+    <p>
+        Every love story deserves its own soundtrack.
+    </p>
+
+    <audio id="birthdayMusic" loop preload="none">
+        <source src="music/birthday-song.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+
+    <button id="musicBtn" type="button">
+        🎵 Play Our Song
+    </button>
+
+    <p id="musicMessage" class="feature-message" aria-live="polite">
+        Press play to listen to your special song.
+    </p>
+
+</section>
+
+
+<!-- ============================= -->
+<!-- SECRET LOVE MESSAGE -->
+<!-- ============================= -->
+
+<section class="card secret-section">
+
+    <h2>One Last Little Secret 💌</h2>
+
+    <p>
+        There's something else I want you to know.
+    </p>
+
+    <button id="secretBtn" type="button">
+        💖 Reveal My Secret
+    </button>
+
+    <div id="secretMessage" class="secret-message" hidden>
+
+        <div class="secret-heart">❤️</div>
+
+        <h3>You Are My Favorite Person</h3>
+
+        <p>
+            In a world full of people, my heart found you.
+            And if I had to choose all over again,
+            I would still choose you.
+        </p>
+
+        <p>
+            Today, tomorrow, and in every beautiful
+            moment that life gives us. 💗
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ============================= -->
+<!-- LITTLE PROMISES -->
+<!-- ============================= -->
+
+<section class="card promises-section">
+
+    <h2>A Few Promises for You 💕</h2>
+
+    <p>Tap the button to discover a little promise.</p>
+
+    <div class="promise-box">
+
+        <div id="promiseEmoji">💖</div>
+
+        <p id="promiseText" aria-live="polite">
+            I promise to keep finding reasons to make you smile.
+        </p>
+
+    </div>
+
+    <button id="promiseBtn" type="button">
+        ✨ Another Promise
+    </button>
+
+</section>
+
+
+<!-- ============================= -->
+<!-- NIGHT MODE -->
+<!-- ============================= -->
+
+<button id="themeBtn"
+        class="theme-toggle"
+        type="button"
+        aria-pressed="false">
+
+    🌙 Dreamy Night Mode
+
+</button>
+
+
+        <!-- Birthday Message -->
+        <section class="card intro-card">
+
+            <h2>To My Favorite Person 🌷</h2>
+
+            <p>
+                If I could wrap up all the little things you make better—
+                the smiles, the comfort, and the beautiful ordinary moments—
+                I would give them all to you today.
+            </p>
+
+            <p class="surprise-text">
+                But wait... I have something special for you 💌
+            </p>
+
+            <button id="openBtn" type="button">
+                💌 Open Your Birthday Letter
+            </button>
+
+        </section>
+
+        <!-- Hidden Love Letter -->
+        <section class="card letter"
+                 id="letter"
+                 aria-labelledby="letter-title"
+                 hidden>
+
+            <h2 id="letter-title">
+                One Thing I Want You to Know... ❤️
+            </h2>
+
+            <p>My love,</p>
+
+            <p>
+                Happy birthday to the girl who makes my days brighter
+                just by being in them. You deserve a year full of beautiful
+                moments, unexpected happiness, dreams coming true,
+                and countless reasons to smile.
+            </p>
+
+            <p>
+                I hope I get to be beside you for the big adventures
+                and the tiny moments too—the silly laughs, the long talks,
+                the quiet days, and all the memories we haven't made yet.
+            </p>
+
+            <p>
+                I may not always find the perfect words, but I hope you
+                never doubt this: you are loved, you are precious to me,
+                and I will always cheer for you.
+            </p>
+
+            <p>
+                Today is your day, but having you in my life already
+                feels like a gift. If I could make one birthday wish
+                for myself, it would be for many more birthdays with you. ❤️
+            </p>
+
+            <p class="signature">
+                Forever yours,<br>
+                Your Person 💖
+            </p>
+
+        </section>
+
+        <footer>
+            MADE WITH LOVE · JUST FOR YOU · ALWAYS ♡
+        </footer>
+
+    </main>
+
+    <!-- Fullscreen Photo Viewer -->
+    <div class="photo-viewer"
+         id="photoViewer"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Expanded photo"
+         hidden>
+
+        <button class="close-viewer"
+                id="closeViewer"
+                type="button"
+                aria-label="Close photo viewer">
+            &times;
+        </button>
+
+        <img id="expandedPhoto" src="" alt="">
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
