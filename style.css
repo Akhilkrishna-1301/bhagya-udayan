@@ -1236,3 +1236,23 @@ p {
         box-sizing: border-box; 
     }
 }
+
+/* =====================================
+   MOBILE BACKGROUND IMAGE POSITION
+===================================== */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-size: cover !important;
+
+        /* Shift the image horizontally */
+        background-position: 65% center !important;
+
+        background-repeat: no-repeat !important;
+        background-attachment: scroll !important;
+
+        background-color: #080b16;
+    }
+
+}
