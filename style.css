@@ -882,3 +882,287 @@ button:hover {
 }
 
 /* Night mode is now permanent */
+
+/* Full website background image */
+
+body {
+    background:
+        linear-gradient(
+            rgba(5, 8, 18, 0.78),
+            rgba(5, 8, 18, 0.85)
+        ),
+        url("images/bhagya13.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-color: #080b16;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Make cards transparent so background is visible */
+
+.card,
+.letter-card,
+.music-player,
+.promise-card,
+.secret-card {
+    background: rgba(15, 20, 35, 0.78);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+/* Mobile background support */
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+}
+
+/* =====================================
+   CLEAR TRANSPARENT GLASS CARD DESIGN
+===================================== */
+
+/* All birthday cards and sections */
+.card,
+.cake-card,
+.cake-section,
+.music-player,
+.secret-card,
+.secret-section,
+.promise-card,
+.promise-section,
+.letter-card,
+.love-letter,
+.birthday-letter,
+.section-card,
+section {
+
+    background: rgba(5, 10, 25, 0.12) !important;
+
+    backdrop-filter: blur(1px) !important;
+    -webkit-backdrop-filter: blur(1px) !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+
+    color: #ffffff;
+}
+
+/* Cake card */
+.cake-card,
+.cake-section {
+    background: rgba(5, 10, 25, 0.10) !important;
+}
+
+/* Music player */
+.music-player {
+    background: rgba(5, 10, 25, 0.10) !important;
+}
+
+/* Secret message */
+.secret-card,
+.secret-section {
+    background: rgba(5, 10, 25, 0.10) !important;
+}
+
+/* Promise card */
+.promise-card,
+.promise-section {
+    background: rgba(5, 10, 25, 0.10) !important;
+}
+
+/* Love letter */
+.letter-card,
+.love-letter,
+.birthday-letter,
+#letter {
+    background: rgba(5, 10, 25, 0.10) !important;
+}
+
+/* Golden headings */
+h1, h2, h3 {
+    color: #f5d78e;
+}
+
+/* White text */
+p {
+    color: #ffffff;
+}
+
+/* Transparent promise message box */
+#promiseText,
+.promise-box,
+.promise-display,
+.promise-content {
+    background: rgba(5, 10, 25, 0.12) !important;
+
+    backdrop-filter: blur(1px) !important;
+    -webkit-backdrop-filter: blur(1px) !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+
+    box-shadow: none !important;
+    color: #ffffff !important;
+}
+
+/* Promise message text */
+#promiseText p,
+.promise-box p,
+.promise-display p,
+.promise-content p {
+    color: #f5d78e !important;
+}
+
+/* Rainbow emoji */
+#promiseEmoji {
+    background: transparent !important;
+}
+
+/* =================================
+   TRANSPARENT LOVE MESSAGE CARD
+================================= */
+
+#secretMessage,
+.secret-message,
+.love-message,
+.message-card,
+.love-card,
+.heart-message {
+    background: rgba(5, 10, 25, 0.12) !important;
+
+    backdrop-filter: blur(1px) !important;
+    -webkit-backdrop-filter: blur(1px) !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+
+    border-radius: 20px;
+
+    box-shadow: none !important;
+
+    color: #ffffff !important;
+}
+
+/* Love message heading */
+#secretMessage h2,
+.secret-message h2,
+.love-message h2,
+.message-card h2,
+.love-card h2 {
+    color: #f5d78e !important;
+}
+
+/* Love message paragraphs */
+#secretMessage p,
+.secret-message p,
+.love-message p,
+.message-card p,
+.love-card p {
+    color: #ffffff !important;
+}
+
+/* Heart emoji */
+#secretMessage span,
+.secret-message span {
+    background: transparent !important;
+}
+
+/* =====================================
+   TRANSPARENT PHOTO GALLERY
+===================================== */
+
+/* Gallery photo cards */
+.gallery-item,
+.photo-card,
+.gallery figure,
+.gallery .photo,
+.gallery-card {
+    background: rgba(5, 10, 25, 0.12) !important;
+
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+
+    border: 1px solid rgba(255, 255, 255, 0.20) !important;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15) !important;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Photo images */
+.gallery img {
+    background: transparent !important;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+/* Photo captions */
+.gallery-item p,
+.photo-card p,
+.gallery figure figcaption,
+.gallery-card p {
+    color: #f5d78e !important;
+    background: transparent !important;
+}
+
+/* Remove white backgrounds from gallery containers */
+.gallery {
+    background: transparent !important;
+}
+
+/* Gallery hover effect */
+.gallery-item:hover,
+.photo-card:hover,
+.gallery figure:hover,
+.gallery-card:hover {
+    border-color: rgba(245, 215, 142, 0.5) !important;
+    transform: translateY(-3px);
+    transition: 0.3s ease;
+}
+
+/* =================================
+   MOVE BIRTHDAY CONTENT BELOW FACE
+================================= */
+
+.hero-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    /* Move content below her face */
+    padding-top: 400px;
+
+    box-sizing: border-box;
+}
+
+/* Heading */
+.hero-content h1 {
+    margin-top: 25px;
+}
+
+/* Subtitle */
+.hero-content .subtitle {
+    margin-top: 20px;
+}
+
+/* Heart */
+.hero-content .main-heart {
+    margin-top: 30px;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+    .hero-content {
+        padding-top: 300px;
+    }
+}
