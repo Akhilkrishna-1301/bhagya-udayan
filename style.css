@@ -796,3 +796,89 @@ body.night-mode footer {
 #musicBtn:hover {
     background: #d6336c;
 }
+
+/* =================================
+   PERMANENT DARK ROMANTIC THEME
+================================= */
+
+body {
+    background: linear-gradient(135deg, #080b16, #111827, #171329);
+    color: #f5f5f5;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #f5d78e;
+}
+
+/* Paragraphs */
+p {
+    color: #cbd5e1;
+}
+
+/* Cards and sections */
+.card,
+.letter-card,
+.music-player,
+.promise-card,
+.secret-card {
+    background: rgba(25, 30, 48, 0.95);
+    color: #f5f5f5;
+    border: 1px solid rgba(245, 215, 142, 0.2);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(135deg, #b58b45, #e6c779);
+    color: #111827;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #f5d78e;
+    transform: translateY(-2px);
+}
+
+/* Photo gallery */
+.gallery img {
+    border: 2px solid rgba(245, 215, 142, 0.4);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Birthday letter */
+#letter {
+    background: #171e30;
+    color: #f5f5f5;
+}
+
+/* Music player */
+.music-player {
+    background: #171e30;
+}
+
+/* Secret message */
+.secret-message {
+    color: #f5d78e;
+}
+
+/* Floating hearts */
+.heart {
+    opacity: 0.7;
+}
+
+/* Stars */
+.stars {
+    opacity: 0.8;
+}
+
+/* Fullscreen photo viewer */
+#photoViewer {
+    background: rgba(0, 0, 0, 0.95);
+}
+
+/* Night mode is now permanent */
