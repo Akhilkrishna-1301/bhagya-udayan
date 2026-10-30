@@ -764,3 +764,35 @@ body.night-mode footer {
         padding: 20px 14px;
     }
 }
+
+.music-player {
+    text-align: center;
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(255, 105, 180, 0.2);
+}
+
+.music-player h2 {
+    color: #e75480;
+}
+
+.music-player p {
+    color: #777;
+}
+
+#musicBtn {
+    background: #e75480;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#musicBtn:hover {
+    background: #d6336c;
+}
