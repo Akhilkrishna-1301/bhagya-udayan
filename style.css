@@ -1166,3 +1166,73 @@ p {
         padding-top: 300px;
     }
 }
+
+/* =====================================
+   MOBILE BACKGROUND IMAGE ALIGNMENT
+===================================== */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-image:
+            linear-gradient(
+                rgba(0, 0, 0, 0.30),
+                rgba(0, 0, 0, 0.40)
+            ),
+            url("images/background.jpg") !important;
+
+        background-size: auto 100vh !important;
+
+        /* Adjust horizontal and vertical positioning */
+        background-position: center top !important;
+
+        background-repeat: no-repeat !important;
+
+        background-attachment: fixed !important;
+
+        background-color: #080b16;
+    }
+
+    /* Prevent horizontal scrolling */
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Birthday introduction */
+    .hero-content {
+        padding-top: 300px !important;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Responsive birthday heading */
+    .hero-content h1 {
+        font-size: clamp(38px, 10vw, 55px);
+        line-height: 1.15;
+    }
+
+    /* Responsive photo gallery */
+    .gallery {
+        grid-template-columns: 1fr !important;
+        width: 100%;
+    }
+
+    .gallery-item,
+    .photo-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Cards should fit mobile screen */
+    .music-player,
+    .promise-card,
+    .secret-card,
+    .letter-card {
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box; 
+    }
+}
