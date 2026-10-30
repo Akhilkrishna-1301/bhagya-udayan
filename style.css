@@ -35,7 +35,7 @@ body::before {
   pointer-events: none;
   background:
     linear-gradient(rgba(5,8,18,.18), rgba(5,8,18,.28)),
-    url("images/bhagya13.jpg") center 38% / cover no-repeat;
+    url("images/bhagya13-com.jpg") center 38% / cover no-repeat;
   background-color: var(--dark);
 }
 
